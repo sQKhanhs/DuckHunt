@@ -1,5 +1,5 @@
 body {
-    cursor: url("..\asset\aim.png"),auto;
+    cursor: url("asset/aim.png"),auto;
 }
 #canvas1 {
     width: 100%;

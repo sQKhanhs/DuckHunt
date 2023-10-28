@@ -1,13 +1,13 @@
     let background = new Image();
-    background.src = "background.png";
+    background.src = "asset/background.png";
     let startLogo = new Image();
-    startLogo.src = "startLogo.png";
+    startLogo.src = "asset/startLogo.png";
     let bgsound = new Audio();
-    bgsound.src = "theForest.mp3";
+    bgsound.src = "asset/theForest.mp3";
     let winsound = new Audio();
-    winsound.src ="victory.mp3"
+    winsound.src = "asset/victory.mp3";
     let losesound = new Audio();
-    losesound.src ="gameOver.mp3"
+    losesound.src = "asset/gameOver.mp3";
     let canvas = document.getElementById("canvas1");
     let ctx = canvas.getContext("2d");
     canvas.width = window.innerWidth;
@@ -35,7 +35,7 @@
     this.vy = Math.random()*3-3;
     this.markedForDeletion = false;
     this.image = new Image();
-    this.image.src = "duckMoveLeft.png";
+    this.image.src = "asset/duckMoveLeft.png";
     this.frame = 0;
     this.timeSinceFlap = 0;
     this.flapInterval = Math.random()*50+150;
@@ -71,7 +71,7 @@
     let duckFallDown = [];
     function DuckFallDown(x,y,width,height){
     this.image = new Image();
-    this.image.src = "duckFallDown.png";
+    this.image.src = "asset/duckFallDown.png";
     this.spriteWidth = 67;
     this.spriteHeight = 110;
     this.x = x;
@@ -82,7 +82,7 @@
     this.frame = 0;
     this.markedForDeletion = false;
     this.sound = new Audio();
-    this.sound.src = "duckQuack.mp3";
+    this.sound.src = "asset/duckQuack.mp3";
     this.timeSinceLastFrame = 0;
     this.frameInterval = 200;
     this.update = function(deltaTime){
@@ -136,7 +136,7 @@
         ctx.fillStyle = "black";
         ctx.fillText("Duck To Shoot ( " + " -_･) ︻デ═一 ",20,610)
         let duckIcon = new Image();
-        duckIcon.src = "duckIcon2.png";
+        duckIcon.src = "asset/duckIcon2.png";
         for(let i = 0;i<duckToShoot;i++){
         ctx.drawImage(duckIcon,20*i + 10,620,30,30);
         }
